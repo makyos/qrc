@@ -1,5 +1,5 @@
 [package]
-name = "qrer"
+name = "qrc"
 version = "0.1.0"
 authors = ["makyos"]
 edition = "2018"
