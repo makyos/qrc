@@ -4,6 +4,7 @@ extern crate qrcode;
 use qrcode::QrCode;
 
 fn main() {
+
     let args: Vec<String> = env::args().collect();
     let string = format!("{}", &args[1..].join(" "));
 
@@ -17,4 +18,6 @@ fn main() {
 
     println!("{}", qr);
     println!("{}", &string);
+
 }
+
