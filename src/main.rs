@@ -6,7 +6,7 @@ use qrcode::QrCode;
 fn main() {
 
     let args: Vec<String> = env::args().collect();
-    let string = format!("{}", &args[1..].join(" "));
+    let string = &args[1..].join(" ").to_string();
 
     let code = QrCode::new(&string).unwrap();
     let qr = code.render::<char>()
