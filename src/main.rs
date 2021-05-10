@@ -12,8 +12,8 @@ fn main() {
     let qr = code.render::<char>()
         .quiet_zone(true)
         .module_dimensions(2, 1)
-        .light_color(' ')
-        .dark_color('#')
+        .light_color('░')
+        .dark_color('█')
         .build();
 
     println!("{}", qr);
