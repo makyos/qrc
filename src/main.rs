@@ -1,6 +1,4 @@
 use std::env;
-
-extern crate qrcode;
 use qrcode::QrCode;
 
 fn main() {
